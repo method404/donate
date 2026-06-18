@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donate</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #11151b;
+        --panel: #171c23;
+        --line: #2b333d;
+        --text: #f4f7fb;
+        --muted: #a8b4c0;
+        --accent: #19c37d;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(1080px, calc(100vw - 48px));
+        margin: 0 auto;
+        padding: 40px 0 72px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+        gap: 24px;
+        align-items: end;
+        padding-bottom: 22px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .kicker {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 5vw, 3.8rem);
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+
+      .desc {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 22px;
+      }
+
+      .card {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 220px;
+        gap: 18px;
+        align-items: center;
+        padding: 18px;
+        border: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      .symbol {
+        margin: 0 0 4px;
+        color: #a3afbb;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 1.35rem;
+        line-height: 1.1;
+      }
+
+      .network {
+        display: inline-flex;
+        min-height: 26px;
+        align-items: center;
+        padding: 0 10px;
+        background: #242b33;
+        color: #dbe3eb;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+
+      .address-label {
+        margin: 18px 0 8px;
+        color: #8f9eac;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .address {
+        margin: 0;
+        color: #7f8b97;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .qr {
+        width: 220px;
+        height: 220px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #2c343d;
+        background: #ffffff;
+        color: #87929e;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      @media (max-width: 860px) {
+        header,
+        .card {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="kicker">Toonarr</p>
+          <h1>Donate</h1>
+        </div>
+        <p class="desc">Wallet addresses will be added here later.</p>
+      </header>
+
+      <section class="list">
+        <article class="card">
+          <div>
+            <p class="symbol">BTC</p>
+            <h2>Bitcoin</h2>
+            <p class="address-label">Wallet Address</p>
+            <p class="address">Coming soon</p>
+          </div>
+          <div class="qr">QR</div>
+        </article>
+
+        <article class="card">
+          <div>
+            <p class="symbol">ETH</p>
+            <h2>Ethereum</h2>
+            <p class="address-label">Wallet Address</p>
+            <p class="address">Coming soon</p>
+          </div>
+          <div class="qr">QR</div>
+        </article>
+
+        <article class="card">
+          <div>
+            <p class="symbol">USDT</p>
+            <h2>USDT (TRX)</h2>
+            <p class="address-label">Wallet Address</p>
+            <p class="address">Coming soon</p>
+          </div>
+          <div class="qr">QR</div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

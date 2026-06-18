@@ -1,6 +1,4 @@
 # Donate
 
-Reserved repository for Toonarr donation assets.
-
-The live donation landing page is currently served locally from the Toonarr app at `/donate`.
+Public donation landing page for Toonarr.
 Donation assets for Toonarr
