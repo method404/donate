@@ -842,7 +842,7 @@
 
       async function ensureWalletProvider() {
         if (!window.ethereum || !window.ethers) {
-          throw new Error("메타마스크 필요");
+          throw new Error("브라우저 지갑이 필요합니다.");
         }
         const provider = new window.ethers.BrowserProvider(window.ethereum);
         return provider;
